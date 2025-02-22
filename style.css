@@ -1,0 +1,581 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+    text-align: center;
+  }
+  .overflow{
+    overflow: hidden;
+  }
+  nav {
+    top: -16px; /* Adjust this value as needed */
+}
+
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .hero-image {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .hero-button {
+    background: white;
+    color: #3b82f6;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .hero-button:hover {
+    background: #f3f4f6;
+  }
+
+  header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+.card-footer {
+    padding: 1rem;
+    text-align: center;
+}
+.card-footer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.card-footer button:hover {
+    background-color: #45a049;
+}
+.new-feature {
+    margin-top: 2rem;
+    text-align: center;
+}
+.new-feature p {
+    font-size: 1.2rem;
+    color: #555;
+}
+header {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+header h1 {
+    margin: 0;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+.card {
+    background: #1f2937;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-header {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.card-content {
+    padding: 1rem;
+    text-align: center;
+    color: #d1d5db;
+}
+.card-footer {
+    padding: 1rem;
+    text-align: center;
+}
+.card-footer button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.card-footer button:hover {
+    background-color: #1e40af;
+}
+.new-feature {
+    margin-top: 2rem;
+    text-align: center;
+}
+.new-feature p {
+    font-size: 1.2rem;
+    color: #9ca3af;
+}
+
+header {
+    background-color: #161b22;
+    padding: 1.5rem;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+nav a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 2rem;
+}
+.section {
+    display: none;
+}
+.section.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.card {
+    background-color: #21262d;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card-header {
+    padding: 1rem;
+    background-color: #161b22;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.card-content {
+    padding: 1rem;
+}
+.card-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #8b949e;
+}
+.card-footer {
+    padding: 1rem;
+    text-align: center;
+}
+.card-footer button {
+    padding: 0.5rem 1rem;
+    background-color: #238636;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.card-footer button:hover {
+    background-color: #2ea043;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+.profile-content {
+    text-align: center;
+}
+.profile-content h2 {
+    margin-bottom: 0.5rem;
+}
+.profile-content p {
+    margin: 0.5rem 0;
+}
+.payment-form {
+    background-color: #21262d;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.payment-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #c9d1d9;
+}
+.payment-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+.payment-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #238636;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.payment-form button:hover {
+    background-color: #2ea043;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+}
+
+.hero {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #f9d342;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #f1f1f1;
+}
+
+.button-group {
+    margin-top: 30px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button.secondary {
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #60a5fa;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 2rem;
+}
+
+  
+  @media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    /* For smaller screens */
+    ul.space-x-6 {
+      display: none !important; /* Hide the desktop menu */
+    }
+  
+    #mobile-menu {
+      display: none; /* Initially hidden */
+    }
+  
+    /* Optional: To center and align mobile menu */
+    #mobile-menu li {
+      text-align: center;
+    }
+    .hero-image {
+        width: 80%; /* Adjust image width for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Smaller title font size */
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem; /* Smaller subtitle font size */
+    }
+
+    .hero-button {
+        font-size: 0.9rem; /* Smaller button font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+
+    .card {
+        margin: 10px; /* Reduce margin for cards */
+    }
+
+    .card-header {
+        font-size: 1.2rem; /* Smaller card header font size */
+    }
+    header {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    main {
+        padding: 1rem; /* Reduce padding for main content */
+    }
+
+    .card {
+        margin: 0; /* Remove margin for cards */
+    }
+
+    .card-footer button {
+        font-size: 0.9rem; /* Smaller button font size */
+        padding: 0.4rem 0.8rem; /* Adjust padding */
+    }
+
+    .new-feature p {
+        font-size: 1rem; /* Smaller font size for new feature text */
+    }
+
+    main {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller hero title */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller hero paragraph */
+    }
+
+    .button {
+        width: 100%; /* Full width buttons */
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .card {
+        padding: 1rem; /* Reduce card padding */
+    }
+
+    .card h3 {
+        font-size: 1.5rem; /* Smaller card header */
+    }
+
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem; /* Even smaller title font size */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem; /* Even smaller subtitle font size */
+    }
+
+    .hero-button {
+        font-size: 0.8rem; /* Even smaller button font size */
+        padding: 6px 12px; /* Adjust padding */
+    }
+
+    .card-header {
+        font-size: 1rem; /* Smaller card header font size */
+    }
+    header {
+        font-size: 1.2rem; /* Smaller header font size */
+    }
+
+    main {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    .card {
+        margin: 0.5rem 0; /* Add some margin between cards */
+    }
+
+    .card-header {
+        font-size: 1.2rem; /* Smaller card header font size */
+    }
+
+    .new-feature p {
+        font-size: 0.9rem; /* Even smaller font size for new feature text */
+    }
+    header h1 {
+        font-size: 1.5rem; /* Smaller header font size */
+    }
+
+    .profile-img {
+        width: 100px; /* Smaller profile image */
+        height: 100px; /* Smaller profile image */
+    }
+
+    .payment-form {
+        padding: 1rem; /* Reduce padding for payment form */
+    }
+
+    .payment-form input {
+        padding: 0.5rem; /* Smaller input padding */
+    }
+
+    .payment-form button {
+        padding: 0. 5rem; /* Smaller button padding */
+    }
+
+    .new-feature p {
+        font-size: 1rem; /* Smaller font size for new feature text */
+    }
+
+    .card-content p {
+        font-size: 0.9rem; /* Smaller card content font size */
+    }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}
+
+html{
+   scroll-behavior: smooth;
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Alpha Subscription Plans</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<div class="overflow" id="home">
+<body>
+    <style>
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            padding: 15px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Your website content goes here -->
+
+    <div id="cookie-consent" class="cookie-consent hidden">
+        <p>This website uses cookies to ensure you get the best experience on our website. 
+           <a href="/privacy-policy" class="text-blue-500">Learn more</a>
+        </p>
+        <button id="accept-cookies" class="bg-blue-600 text-white py-2 px-4 rounded">Accept Cookies</button>
+        <button id="decline-cookies" class="bg-gray-300 text-black py-2 px-4 rounded">Decline</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsent = document.getElementById('cookie-consent');
+            const acceptCookies = document.getElementById('accept-cookies');
+            const declineCookies = document.getElementById('decline-cookies');
+
+            // Check if cookies have been accepted
+            if (!localStorage.getItem('cookiesAccepted')) {
+                cookieConsent.classList.remove('hidden');
+            }
+
+            acceptCookies.addEventListener('click', function() {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieConsent.classList.add('hidden');
+            });
+
+            declineCookies.addEventListener('click', function() {
+                cookieConsent.classList.add('hidden');
+            });
+        });
+    </script>
+    <body class="bg-gray-100">
+
+        <nav class="bg-white shadow-md fixed top-30 left-0 w-full z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <h1 class="text-xl font-bold">My Website</h1>
+                        </div>
+                        <div class="hidden md:flex space-x-4">
+                            <ul class="flex space-x-4">
+                                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                                <li><a href="#feature" class="hover:text-gray-300">Features</a></li>
+                                <li><a href="#price" class="hover:text-gray-300">Pricing</a></li>
+                                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button id="navbar-toggle" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar-menu" class="hidden md:hidden">
+                <ul class="flex flex-col space-y-2 px-4 py-2">
+                    <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#feature" class="hover:text-gray-300">Features</a></li>
+                    <li><a href="#price" class="hover:text-gray-300">Pricing</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+  <section class="hero-section">
+    <img src="homr.avif" alt="Define Your Service" class="hero-image">
+    <h1 class="hero-title">Define Your Service</h1>
+    <p class="hero-subtitle">Identify the subscription offerings and target audience.</p>
+    <a href="#start">
+    <button class="hero-button">Get Started</button>
+</a>
+  </section>
+  
+  <header  id="start">
+    <h1>Choose a Platform</h1>
+    <p>Select a website builder or CMS that supports subscriptions.</p>
+</header>
+
+<main>
+    <div class="card" >
+        <img src="1.webp" alt="Platform A" class="card-image">
+        <div class="card-header">Platform A</div>
+        <div class="card-content">
+            <p>Easy-to-use website builder with great customization options.</p>
+        </div>
+        <div class="card-footer">
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="2.avif" alt="Platform B" class="card-image">
+        <div class="card-header">Platform B</div>
+        <div class="card-content">
+            <p>Comprehensive CMS with powerful subscription tools.</p>
+        </div>
+        <div class="card-footer">
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="3.webp" alt="Platform C" class="card-image">
+        <div class="card-header">Platform C</div>
+        <div class="card-content">
+            <p>Ideal for e-commerce with integrated subscription features.</p>
+        </div>
+        <div class="card-footer">
+            <button>Learn More</button>
+        </div>
+    </div>
+</main>
+
+<div class="new-feature" id="feature">
+    <h2>New Feature!</h2>
+    <p>Explore our AI-powered recommendation engine to choose the perfect platform for your needs!</p>
+</div>
+
+<header>
+    <h1>Alpha Feature!</h1>
+</header>
+
+<nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('profile')">Profile</a>
+    <a onclick="showSection('settings')">Settings</a>
+    <a onclick="showSection('payments')">Payments</a>
+</nav>
+
+<main>
+    <div id="home" class="section active">
+        <div class="card">
+            <img src="4.webp" alt="Recent Activities" class="card-image">
+            <div class="card-header">Recent Activities</div>
+            <div class="card-content">
+                <p>Track your recent actions and progress across various tasks.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5.avif" alt="Upcoming Tasks" class="card-image">
+            <div class="card-header">Upcoming Tasks</div>
+            <div class="card-content">
+                <p>Keep an eye on upcoming deadlines and important milestones.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="6.avif" alt="Performance Insights" class="card-image">
+            <div class="card-header">Performance Insights</div>
+            <div class="card-content">
+                <p>Analyze your performance and identify areas for improvement.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="7.avif" alt="Team Collaboration" class="card-image">
+            <div class="card-header">Team Collaboration</div>
+            <div class="card-content">
+                <p>Collaborate with your team and manage projects effectively.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile" class="section">
+        <img src="profile.avif" alt="Profile Picture" class="profile-img">
+        <div class="profile-content">
+            <h2>John Doe</h2>
+            <p>CEO at ABC Corp</p>
+            <p>John is a seasoned business professional with over 15 years of experience in management and entrepreneurship. Passionate about innovation and leadership.</p>
+        </div>
+    </div>
+
+    <div id="settings" class="section">
+        <h2>Settings</h2>
+        <p>Manage your preferences and account settings.</p>
+    </div>
+
+    <div id="payments" class="section">
+        <h2>Set Up Payment Processing</h2>
+        <div class="payment-form">
+            <form id="paymentForm">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="Enter card number" required>
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="Enter CVV" required>
+
+                <label for="cardholderName">Cardholder Name:</label>
+                <input type="text" id="cardholderName" placeholder="Enter name on card" required>
+
+                <button type="submit">Process Payment</button>
+            </form>
+        </div>
+    </div>
+</main>
+  
+
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>We’ve Launched!</h1>
+            <p>Our new product is live and ready for you. Discover its incredible features and join our vibrant community today!</p>
+        </div>
+        <div class="button-group">
+            <a href="#" class="button">Get Started</a>
+            <a href="#" class="button secondary">Promote</a>
+        </div>
+    </div>
+   
+    <div class="container">
+        <!-- News Section -->
+        <div class="card">
+            <img src="8.avif" alt="News">
+            <h3>Latest News</h3>
+            <p>Stay updated with the latest news around the globe. Explore trending topics, breaking news, and in-depth analysis.</p>
+        </div>
+
+        <!-- Products Section -->
+        <div class="card">
+            <img src="9.webp" alt="Products">
+            <h3>Our Products</h3>
+            <p>Discover our wide range of products designed to meet your needs. From technology to everyday essentials, we have it all.</p>
+        </div>
+
+        <!-- Economy Section -->
+        <div class="card">
+            <img src="10.avif" alt="Economy">
+            <h3>Economic Insights</h3>
+            <p>Get insights into the current economic trends, market analysis, and financial tips to stay ahead.</p>
+        </div>
+
+        <!-- More Topics Section -->
+        <div class="card">
+            <img src="11.webp" alt="Topics">
+            <h3>Other Topics</h3>
+            <p>Explore more categories including health, lifestyle, education, and more tailored to your interests.</p>
+        </div>
+    </div>
+    <body class="bg-gray-900" >
+        <section class="py-12" id="price">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-8">Choose Your Plan</h2>
+                <p class="text-center text-gray-400 mb-12">Our plans are designed for individuals and businesses. Select the one that best fits your needs!</p>
+    
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Basic Plan -->
+                    <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-4">Basic</h3>
+                        <p class="text-gray-400 mb-6">Perfect for individuals starting out.</p>
+                        <div class="text-4xl font-extrabold text-gray-100 mb-4">$9<span class="text-base text-gray-400">/month</span></div>
+                        <ul class="space-y-3 text-gray-400 mb-6">
+                            <li>✔ Access to core features</li>
+                            <li>✔ Email support</li>
+                            <li>✔ 5 active projects</li>
+                        </ul>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition" onclick="showWhoNeedsIt('Basic')">Choose Basic</button>
+                    </div>
+    
+                    <!-- Pro Plan -->
+                    <div class="bg-gray-800 shadow-lg rounded-lg p-6 border-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-4">Pro</h3>
+                        <p class="text-gray-400 mb-6">Ideal for professionals and small teams.</p>
+                        <div class="text-4xl font-extrabold text-gray-100 mb-4">$29<span class="text-base text-gray-400">/month</span></div>
+                        <ul class="space-y-3 text-gray-400 mb-6">
+                            <li>✔ Everything in Basic</li>
+                            <li>✔ Priority support</li>
+                            <li>✔ 20 active projects</li>
+                            <li>✔ Team collaboration tools</li>
+                        </ul>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition" onclick="showWhoNeedsIt('Pro')">Choose Pro</button>
+                    </div>
+    
+                    <!-- Enterprise Plan -->
+                    <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-4">Enterprise</h3>
+                        <p class="text-gray-400 mb-6">Designed for large businesses.</p>
+                        <div class="text-4xl font-extrabold text-gray-100 mb-4">Custom</div>
+                        <ul class="space-y-3 text-gray-400 mb-6">
+                            <li>✔ Everything in Pro</li>
+                            <li>✔ Dedicated account manager</li>
+                            <li>✔ Unlimited projects</li>
+                            <li>✔ Custom integrations</li>
+                        </ul>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section class="py-12 bg-gray-800" id="contact">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl font-extrabold text-center text-gray-100 mb-8">Contact Us</h2>
+                <p class="text-center text-gray-400 mb-12">Have questions or need assistance? Fill out the form below, and we'll get back to you promptly.</p>
+    
+                <form class="max-w-3xl mx-auto bg-gray-900 p-6 rounded-lg shadow-md" onsubmit="handleSubmit(event)">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-300 font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-700 text-gray-100" placeholder="Your Name" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-300 font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-700 text-gray-100" placeholder="Your Email" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="subject" class="block text-gray-300 font-bold mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-700 text-gray-100" placeholder="Subject" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-300 font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-700 text-gray-100" placeholder="Your Message" required></textarea>
+                    </div>
+    
+                    <div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="bg-blue-900 text-white py-8">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- About Section -->
+              <div>
+                <h2 class="text-lg font-semibold mb-4">About Us</h2>
+                <p class="text-sm">
+                  We provide top-notch subscription services to cater to your every need. Join our platform to experience the best in the market.
+                </p>
+                <br>
+                <br>
+                <a href="privacy.html"> <p>Privacy & Policy</p></a>
+               <a href="term.html">
+                <p>Terms & Conditions</p>
+            </a>
+              </div>
+          
+              <!-- Quick Links Section -->
+              <div>
+                <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+                <ul class="space-y-2">
+                  <li><a href="#home" class="text-sm hover:text-blue-300">Home</a></li>
+                  <li><a href="price#" class="text-sm hover:text-blue-300">Plans</a></li>
+                  <li><a href="#feature" class="text-sm hover:text-blue-300">Features</a></li>
+                  <li><a href="#contact" class="text-sm hover:text-blue-300">Contact Us</a></li>
+                </ul>
+              </div>
+          
+              <!-- Newsletter Section -->
+              <div>
+                <h2 class="text-lg font-semibold mb-4">Stay Updated</h2>
+                <p class="text-sm mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
+                <form class="flex items-center">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="w-full px-4 py-2 rounded-l bg-blue-800 text-white border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                  <button
+                    type="submit"
+                    class="px-4 py-2 rounded-r bg-blue-700 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          
+            <div class="mt-8 border-t border-blue-700 pt-4 text-center text-sm">
+              <p>&copy; 2025 Subscription Platform. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+        
+    <script>
+        const toggleButton = document.getElementById('navbar-toggle');
+        const navbarMenu = document.getElementById('navbar-menu');
+
+        toggleButton.addEventListener('click', () => {
+            navbarMenu.classList.toggle('hidden');
+        });
+    </script>
+   
+        <script>
+        
+    
+            function showWhoNeedsIt(plan) {
+                alert(`The ${plan} plan is best for ${plan === 'Basic' ? 'individuals starting out' : 'professionals and small teams'}.`);
+            }
+    
+            function handleSubmit(event) {
+                event.preventDefault();
+                alert('Thank you for your message! We will get back to you shortly.');
+            }
+    
+            function showSection(id) {
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(id).classList.add('active');
+            }
+    
+            document.getElementById('paymentForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Payment processed successfully!');
+            });
+        </script>
+        
+</script>
+</body>
+</html>
